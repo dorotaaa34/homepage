@@ -1,0 +1,8 @@
+
+.element {
+    width:300px;
+    height:300px;
+    resize:both;
+    overflow: auto;
+    background-image: url("../images/share.png");
+}
