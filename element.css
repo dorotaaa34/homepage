@@ -5,4 +5,7 @@
     resize:both;
     overflow: auto;
     background-image: url("../images/share.png");
+    background-size: 100px;
+    background-color: rgb(112, 46, 46);
+    background-repeat: space;
 }
