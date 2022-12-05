@@ -7,6 +7,14 @@ html {
   box-sizing: inherit;
 }
 
+.element {
+    width:300px;
+    height:300px;
+    resize:both;
+    overflow: auto;
+    background-image: url("../images/share.png");
+}
+
 .body {
     background-color: lightslategray (88, 88, 27);
     font-family: 'Lato', sans-serif;
