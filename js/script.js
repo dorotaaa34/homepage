@@ -1,25 +1,26 @@
 
+let formElement = document.querySelector(".js-form");
+let currencyElement = document.querySelector(".js-currency");
+let amountElement = document.querySelector(".js-amount");
+let resultElement = document.querySelector(".js-result");
 
-let changeBackgroundButton = document.querySelector(".js-changeBackgroundButton");
-let body = document.querySelector(".body");
-let dark = document.querySelector(".dark");
-let nextColour = document.querySelector(".js-nextColour");
+let EUR = 4.52;
+let GBP = 5.43;
 
+formElement.addEventListener("submit",(event) => {
+    event.preventDefault();
 
-changeBackgroundButton.addEventListener("click", () => {
-    body.classList.toggle("dark");
+    let currency = currencyElement.value;
+    let amount = amountElement.value;
 
-
-    if (body.classList.contains("dark")) {
-        nextColour.innerText = "jasny";
-    } else {
-        nextColour.innerText = "ciemny";
+    switch (currency) {
+        case "EUR":
+            result = amount * EUR;
+            break;
+        case "GBP":
+            result = amount * GBP;
+            break;    
     }
-});
 
-let buttonTwo = document.querySelector(".buttonTwo");
-let header = document.querySelector(".header");
-
-buttonTwo.addEventListener("click", () => {
-    header.remove();
+    resultElement.innerText = result.toFixed(2);
 });
