@@ -1,54 +1,38 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kurs euro</title>
-    <script defer src="js/script.js"></script>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/container.css" rel="stylesheet">
-    <link href="css/form.css" rel="stylesheet">
-    <link href="element.css" rel="stylesheet">
-    <link rel="stfylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moja pierwsza strona</title>
+  <link rel="icon" href="images/image.png">
+  <link href="css/style.css" rel="stylesheet">
+  <script defer src="js/script.js"></script>
 </head>
-
 <body>
-    <div class="container element">
-        <form class="form js-form">
-            <h1 class="form__header">Konwerter walut</h1>
-            <fieldset class="form__fieldset">
-                <legend class="form__legend">
-                    Wypełnij poniższe pola
-                </legend>
-                <p>
-                    <label>
-                        <span class="form__labelText">Waluta:</span>
-                        <select class="form__field js-currency" name="currency">
-                            <option value="EUR">EUR</option>
-                            <option value="GBP">GBP</option>
-                        </select>
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <span class="form__labelText"> Kwota w PLN:</span> <input class=" form__field js-amount"
-                            name="amount" autofocus type="number" min="1" required step="0.01">
-                    </label>
-                </p>
-            </fieldset>
-            <p>
-                <button class="form__button">Przelicz kurs!</button>
-            </p>
-            <p class=" form__paragraph">Kwota w PLN: <strong class="js-result"></strong></p>
-        </form>
-    </div>
-</body>
+  <div class="all">
+  <h1 class="mainheadline">Dorota Palmąka</h1>
+ 
+  <p>
+      <button class="przycisk">Usuń nagłówek</button>
+  </p>
+  <img class="photo" width="200" height="200" src="https://i.postimg.cc/vm6Yf7cw/Dorota.jpg" alt="Dorota Palmąka">
+  <button class="button">Ukryj zdjęcie</button>
 
+  <h2 class="secondheadline">
+  O mnie:)
+  </h2>
+  <p> Z wykształcenia jestem nauczycielką <em>języka angielskiego</em> w Szkole Podstawowej, dodatkowo udzielam korepetcji z języka angielskiego, Obecnie przebywam na urlopie wychowawczym, który chce poświęcić nie tylko swojemu synkowi Witoldowi, ale również na rozwijanie swoich nieodkrytych umiejętności jakim jest programowanie.
+  <br>Mam również męża <b>Arka,</b> <i>who is totally awesome:).</i></p>
+  <h3 class="thirdheadline">
+      Zainteresowania
+  </h3>
+  <p>
+      Uwielbiam <strong>podróżować</strong>, oglądać seriale na <span class="element">Netflix</span>, czytać ksiązki, spotykać się z przyjaciółmi, ćwiczyć, jeździć na rowerze, słuchać muzyki. <br>Sprawia mi ogromną przyjemność przekazywanie zdobytej wiedzy uczniom poprzez zabawę, co naprawdę daje super efekty.
+  </p>
+  
+  <h4 class="lastheadline">Dziekuję Ci za przeczytanie tej wizytówki, <br>do zobaczenia w kolejnych zadaniach :) </h4>
+</div>
+ 
+</body>
 </html>
