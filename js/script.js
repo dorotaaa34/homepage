@@ -1,26 +1,18 @@
 
-let formElement = document.querySelector(".js-form");
-let currencyElement = document.querySelector(".js-currency");
-let amountElement = document.querySelector(".js-amount");
-let resultElement = document.querySelector(".js-result");
+console.log("Cześć!");
 
-let EUR = 4.52;
-let GBP = 5.43;
+let przycisk = document.querySelector(".przycisk");
+let mainheadline = document.querySelector(".mainheadline");
 
-formElement.addEventListener("submit",(event) => {
-    event.preventDefault();
+przycisk.addEventListener("click", () => {
+    mainheadline.remove();
+});
 
-    let currency = currencyElement.value;
-    let amount = amountElement.value;
+console.log(przycisk);
 
-    switch (currency) {
-        case "EUR":
-            result = amount * EUR;
-            break;
-        case "GBP":
-            result = amount * GBP;
-            break;    
-    }
+let button = document.querySelector(".button");
+let photo = document.querySelector(".photo");
 
-    resultElement.innerText = result.toFixed(2);
+button.addEventListener("click", () => {
+    photo.remove();
 });
