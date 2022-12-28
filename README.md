@@ -1,13 +1,13 @@
 # Dorota Palmąka
 
 ## Technologies used to create site:
+- HTML
 - BEM
 - CSS
 - FLEXBOX
-- ES+ Futures
-- HTML
 
-## Demo
+
+# Demo
 
 
 https://dorotaaa34.github.io/homepage/
