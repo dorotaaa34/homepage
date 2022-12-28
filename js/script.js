@@ -1,18 +1,23 @@
+let changeBackgroundButton = document.querySelector(".js-changeBackgroundButton");
+let body = document.querySelector(".body");
+let dark = document.querySelector(".dark");
+let nextColour = document.querySelector(".js-nextColour");
 
-console.log("Cześć!");
 
-let przycisk = document.querySelector(".przycisk");
-let mainheadline = document.querySelector(".mainheadline");
+changeBackgroundButton.addEventListener("click", () => {
+    body.classList.toggle("dark");
 
-przycisk.addEventListener("click", () => {
-    mainheadline.remove();
+
+    if (body.classList.contains("dark")) {
+        nextColour.innerText = "jasny";
+    } else {
+        nextColour.innerText = "ciemny";
+    }
 });
 
-console.log(przycisk);
+let buttonTwo = document.querySelector(".buttonTwo");
+let header = document.querySelector(".header");
 
-let button = document.querySelector(".button");
-let photo = document.querySelector(".photo");
-
-button.addEventListener("click", () => {
-    photo.remove();
+buttonTwo.addEventListener("click", () => {
+    header.remove();
 });
