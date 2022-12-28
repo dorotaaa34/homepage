@@ -1,38 +1,141 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moja pierwsza strona</title>
-  <link rel="icon" href="images/newpic.png">
-  <link href="css/style.css" rel="stylesheet">
-  <script defer src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorota Palmąka</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/article.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="all">
-  <h1 class="mainheadline">Dorota Palmąka</h1>
- 
-  <p>
-      <button class="przycisk">Usuń nagłówek</button>
-  </p>
-  <img class="photo" width="200" height="200" src="https://i.postimg.cc/vm6Yf7cw/Dorota.jpg" alt="Dorota Palmąka">
-  <button class="button">Ukryj zdjęcie</button>
-
-  <h2 class="secondheadline">
-  O mnie:)
-  </h2>
-  <p> Z wykształcenia jestem nauczycielką <em>języka angielskiego</em> w Szkole Podstawowej, dodatkowo udzielam korepetcji z języka angielskiego, Obecnie przebywam na urlopie wychowawczym, który chce poświęcić nie tylko swojemu synkowi Witoldowi, ale również na rozwijanie swoich nieodkrytych umiejętności jakim jest programowanie.
-  <br>Mam również męża <b>Arka,</b> <i>who is totally awesome:).</i></p>
-  <h3 class="thirdheadline">
-      Zainteresowania
-  </h3>
-  <p>
-      Uwielbiam <strong>podróżować</strong>, oglądać seriale na <span class="element">Netflix</span>, czytać ksiązki, spotykać się z przyjaciółmi, ćwiczyć, jeździć na rowerze, słuchać muzyki. <br>Sprawia mi ogromną przyjemność przekazywanie zdobytej wiedzy uczniom poprzez zabawę, co naprawdę daje super efekty.
-  </p>
-  
-  <h4 class="lastheadline">Dziekuję Ci za przeczytanie tej wizytówki, <br>do zobaczenia w kolejnych zadaniach :) </h4>
+<body class="body">
+    <button class="button js-changeBackgroundButton">Włącz <span class="js-nextColour">ciemny</span> motyw
+    </button>
+    <div class="container">
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item"> <a class="navigation__link" href="#Praca">Praca</a> </li>
+            <li class="navigation__item"> <a class="navigation__link" href="#Zainteresowania">Zainteresowania</a> </li>
+            <li class="navigation__item"> <a class="navigation__link" href="#Podróże">Podróże</a> </li>
+            <li class="navigation__item"> <a class="navigation__link" href="#druga-sekcja">Druga sekcja</a> </li>
+            <li class="navigation__item"> <a class="navigation__link" href="#trzecia-sekcja">Trzecia sekcja</a> </li>
+        </ul>
+    </nav>
+    <p>
+        <button class="buttonTwo">Usuń nagłówek</button>
+    </p>
+        
+    <article class="article"> 
+        <header class="article__header--first">
+            Dorota Palmąka
+        </header>
+        </article>
+        <article class="article">
+        <article class="article__content article__navigation">
+            <img class="photo" width="200" height="200" src="https://i.postimg.cc/vm6Yf7cw/Dorota.jpg" alt="Dorota Palmąka">
+            <h1 class="article__header article__header--navigation">O mnie</h1>
+            <section>
+                <section id="Praca">
+            <h2 class="article__subHeader article__subHeader--navigation">Praca</h2>
+                </section>
+            <p class="article__paragraph--navigation"> Z wykształcenia jestem nauczycielką <em>języka angielskiego,</em> uczę w Szkole Podstawowej, dodatkowo udzielam korepetcji. <br>Sprawia mi ogromną przyjemność przekazywanie zdobytej wiedzy uczniom poprzez <strong>zabawę</strong>, co daje naprawdę super efekty.</p>
+            <p class="article__paragraph">Moje ulubione gry/aplikacje:</p>
+            </section>
+        </article>
+            <ul class="list">
+                <li class="list__item list__first">
+                    Ćwiczące mówienie
+                    <ul class="list">
+                        <li class="list__item">Taboo</li>
+                        <li class="list__item">Black Stories</li>
+                        <li class="list__item">Dixit</li>
+                    </ul>
+                </li>
+            
+                <li class="list__item list__first">
+                    Ćwiczące gramatykę
+                    <ul class="list">
+                        <li class="list__item">Kahoot</li>
+                        <li class="list__item">Tic-Tac-Toe</li>
+                        <li class="list__item">Story Cubes</li>
+                    </ul>
+                </li>
+                <li class="list__item list__first">
+                    Ruchowe
+                    <ul class="list">
+                        <li class="list__item">Kręgle</li>
+                        <li class="list__item">Rzutki</li>
+                        <li class="list__item">Gry planszowe</li>
+                    </ul>
+                </li>
+                </ul>
+                <article class="article">
+        <section>
+        <section id="druga-sekcja">
+            <section id="Zainteresowania">
+            <h2 class="article__subHeader article__subHeader--navigation">Zainteresowania</h2>
+            </section>
+            <p class="article__paragraph--navigation">Bardzo lubię oglądać seriale na 
+                <span class="article__span">Netflix</span>, czytać książki, spotykać się z przyjaciółmi, ćwiczyć, jeździć na rowerze, słuchać muzyki. </p> 
+        </section>
+        <section id="trzecia-sekcja">
+            <section id="Podróże">
+            <h2 class="article__subHeader article__subHeader--navigation">Podróże</h2>
+            </section>
+            <p class="article__paragraph--navigation">Moją największą pasją są <strong>podróże.</strong> Uwielbiam podróżować z synkiem i mężem, poznawać kulturę innych krajów, rozmawiać z obcokrajowcami, podziwiać niesamowite widoki,dzięki którym mam <i>powera</i> do życia:D. Najczęściej sami organizujemy takie wyjazdy, jednak zdarza nam się również poprzez biuro podróży. To jest nasze ulubione:</p>
+        </section>
+    </section>
+            <p class="article__paragraph--navigation">
+                <a class="link" href="https://www.pkt.pl/firma/iwona-pilarska-sunny-heaven-5268839" rel="noreferrer noopener" target="_blank" title="adres biura podróży sunny heaven">Jeśli masz ochotę, też skorzystaj :)</a>
+             </p>
+            </article>
+            
+             <div class="tableContainer">
+             <table class="table">
+                <caption class="table__caption">
+                    <strong>Nasze ulubione miejsca</strong>
+                </caption>
+                <tr class="table__row">
+                <th class="table__cell table__cell--header" scope="col">Rok</th>
+                <th class="table__cell table__cell--header" scope="col">Za granicą</th>
+                <th class="table__cell table__cell--header" scope="col">W Polsce</th>
+                </tr>
+                <tr class="table__row">
+                <th class="table__cell table__cell--header" scope="row">2022</th>
+                <td class="table__cell table__places">Grecja</td>
+                <td class="table__cell table__places">Kraków</td>
+                </tr>
+                <tr class="table__row">
+                 <th class="table__cell table__cell--header" scope="row">2018</th>
+                 <td class="table__cell table__places">Egipt</td>
+                 <td class="table__cell table__places">Wisła</td>
+                </tr>
+                <tr class="table__row">
+                <th class="table__cell table__cell--header" scope="row">2021</th>
+                <td class="table__cell table__places">Portugalia,Hiszpania</td>
+                <td class="table__cell table__places">Wrocław</td>
+                </tr>
+            </table>
+        </div>
+        <article class="article">
+            <section id="Zwierzak">
+            <h2 class="article__subHeader article__subHeader--navigation">Zwierzak</h2>
+            </section>
+            <h3 class="article__subHeader--navigation">Baron</h3>
+            <p class="article__paragraph--navigation"> Naszym kochanym przyjacielem, jest nasz pies <strong>Baron, rasy <span class="article__span--special">Labrador.</span></strong> Ma 6 lat, kocha spacerować, przytulać się oraz wariować w ogrodzie.</p>
+        </article>
+        
+            <aside class="aside"> <i>"Dog is a man's best friend". </i></aside>
+            <footer class="footer">©Copyright by Dorota Palmąka, wrzesień 2022</footer>
+        
+    </article>
 </div>
- 
 </body>
 </html>
