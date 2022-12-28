@@ -1,6 +1,6 @@
 # Dorota Palmąka
 
-## Technologies used to create site:
+## Technologies used to create website:
 - HTML
 - BEM
 - CSS
