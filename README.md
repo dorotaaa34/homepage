@@ -4,6 +4,7 @@
 - HTML
 - BEM
 - CSS
+- ES6+ FEATURES
 - FLEXBOX
 
 
