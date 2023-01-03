@@ -1,3 +1,5 @@
+console.log("hello");
+
 let changeBackgroundButton = document.querySelector(".js-changeBackgroundButton");
 let body = document.querySelector(".body");
 let dark = document.querySelector(".dark");
