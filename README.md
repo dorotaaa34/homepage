@@ -1,4 +1,6 @@
 # Dorota Palmąka
+## Description
+You can read a few words about me here.
 
 ## Technologies used to create site:
 - HTML
