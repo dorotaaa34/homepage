@@ -8,11 +8,7 @@
     const nextColour = document.querySelector(".js-nextColour");
     body.classList.toggle("dark");
 
-    if (body.classList.contains("dark")) {
-      nextColour.innerText = "jasny";
-    } else {
-      nextColour.innerText = "ciemny";
-    }
+nextColour.innerText = body.classList.contains("dark") ? "jasny" : "ciemny";
   };
 
   const init = () => {
