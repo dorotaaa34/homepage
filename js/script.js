@@ -26,7 +26,7 @@
     });
 
     () => {
-      header.remove();
+      removeHeader();
     };
 
     welcome();
