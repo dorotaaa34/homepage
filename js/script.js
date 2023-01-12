@@ -27,11 +27,10 @@
 
     () => {
       header.remove();
-  }
+    };
 
     welcome();
   };
 
   init();
-
 }
