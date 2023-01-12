@@ -17,12 +17,6 @@
     );
     changeBackgroundButton.addEventListener("click", toggleBackground);
 
-    welcome();
-  };
-
-  init();
-
-  const remove = () => {
     const dark = document.querySelector(".dark");
     const buttonTwo = document.querySelector(".buttonTwo");
     const header = document.querySelector(".header");
@@ -30,7 +24,14 @@
     buttonTwo.addEventListener("click", () => {
       header.remove();
     });
+
+    () => {
+      header.remove();
+  }
+
+    welcome();
   };
 
-  remove();
+  init();
+
 }
