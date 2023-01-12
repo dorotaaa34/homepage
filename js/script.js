@@ -22,11 +22,11 @@
     const header = document.querySelector(".header");
 
     buttonTwo.addEventListener("click", () => {
-      header.remove();
+      removeHeader();
     });
 
     () => {
-      header.remove();
+      removeHeader();
     };
 
     welcome();
